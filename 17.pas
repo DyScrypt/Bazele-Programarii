@@ -1,4 +1,4 @@
-﻿var x,y,z,a,s,d,q,w:integer;
+var x,y,z,a,s,d,q,w:integer;
 begin
  readln(x,y);
  a:=385 div 60;
@@ -6,10 +6,7 @@ begin
  if s+y > 60 then begin
    w:=(s+y)-60;
    x:=x+1;
- end;
-
-    
- q:=x+a;
- 
- writeln(q,' ',w);
+ end else w:= s+y;
+  q:=x+a;
+  writeln(q,':',w);
 end.
